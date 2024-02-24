@@ -3,6 +3,12 @@ class User{
         this.email=email
         this.password=password
     }
+    get email(){
+        return this._email.toUpperCase()
+    }
+    set email(val){
+        this._email = val
+    }
     get password(){
         return this._password.toUpperCase()
     }
@@ -11,4 +17,4 @@ class User{
     }
 }
 const mohit = new User("mohit@mohit.ai","abc")
-console.log(mohit.password);
+console.log(mohit.email);
